@@ -1,14 +1,9 @@
 import * as React from 'react';
 import SingleImage from '../../components/SingleImage';
 import { images } from '../../constants';
-import Layout from '../../components/Layout';
 
 const Page = ({ index }) => {
-  return (
-    <Layout>
-      <SingleImage index={index} />
-    </Layout>
-  );
+  return <SingleImage index={index} />;
 };
 
 export async function getStaticProps({ params }) {
