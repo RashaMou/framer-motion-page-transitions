@@ -1,5 +1,10 @@
 import Gallery from '../components/Gallery';
+import Layout from '../components/Layout';
 
-const Index = () => <Gallery />;
+const Index = () => (
+  <Layout>
+    <Gallery />
+  </Layout>
+);
 
 export default Index;

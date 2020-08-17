@@ -1,9 +1,14 @@
 import * as React from 'react';
 import SingleImage from '../../components/SingleImage';
 import { images } from '../../constants';
+import Layout from '../../components/Layout';
 
 const Page = ({ index }) => {
-  return <SingleImage index={index} />;
+  return (
+    <Layout>
+      <SingleImage index={index} />
+    </Layout>
+  );
 };
 
 export async function getStaticProps({ params }) {
@@ -19,8 +24,6 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   return {
     paths: images.map((_id, index) => {
-      console.log(index);
-
       return {
         params: {
           index: `${index}`,

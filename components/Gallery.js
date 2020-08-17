@@ -35,10 +35,10 @@ const Thumbnail = ({ id, i }) => (
       >
         <Link href="/image/[index]" as={`/image/${i}`} scroll={false}>
           <motion.img
-            src={`https://static1.squarespace.com/static/5b475b2c50a54f54f9b4e1dc/t/${id}.jpg?format=1500w`}
-            alt="The Barbican"
             variants={imageVariants}
             transition={transition}
+            src={`https://static1.squarespace.com/static/5b475b2c50a54f54f9b4e1dc/t/${id}.jpg?format=1500w`}
+            alt="The Barbican"
           />
         </Link>
       </motion.div>
