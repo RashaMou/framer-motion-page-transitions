@@ -66,7 +66,7 @@ const Thumbnail = ({ url, id }) => (
 
 const Gallery = ({ images }) => (
     <>
-        <h1>mt7rk</h1>
+        <h1>Rasha</h1>
 
         <div className="gallery">
             <motion.div
